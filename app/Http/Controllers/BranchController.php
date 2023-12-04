@@ -66,7 +66,7 @@ class BranchController extends Controller
         if (!empty($id)) {
             $project = Branch::where('id', $id)->first();
             $project->delete();
-            return response()->json(['status' => 200, 'message' => 'Branch Deleted Success!'], 200);
+            return response()->json(['status' => 200, 'message' => 'Branch Deleted!'], 200);
         }
     }
 }
